@@ -49,6 +49,10 @@ body{
 	font-family: 'Lato', sans-serif;
 	color: #747784;
 	font-weight: 300;
+	background-image:url("http://or98sir3g.bkt.clouddn.com/pexels-photo-435899.jpg");
+	ackground-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
 }
 .text-muted{
 	color:#BCBBBB;
@@ -62,3 +66,18 @@ body{
 .title-logo{
 	margin-top:20px;
 }
+#example-navbar-collapse{
+	font-size: 18px;
+}
+#example-navbar-collapse a{
+	color:red;
+}
+@media screen and (max-width: 550px){  
+    
+}  
+
+
+
+
+
+ img{ filter: Alpha(Opacity=30, FinishOpacity=0, Style=1, StartX=0, StartY=0, FinishX=100, FinishY=100)}

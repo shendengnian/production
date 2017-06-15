@@ -8,36 +8,49 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300" type="text/css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="/respond.js/1.4.2/respond.min.js"></script>
+       <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
     <![endif]-->
 </head>
 <body>
     <div class="container">
         <div class="row">
-        	<!--导航下拉菜单开始-->
-            <div class="col-md-6 title-logo">
-                <div class="dropdown">
-  					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    					菜单
-    					<span class="caret"></span>
-  					</button>
-  					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    					<li><a href="http://www.shendengnian.com" target="_blank">博客</a></li>
-    					<li><a href="https://github.com/shendengnian" target="_blank">GitHub</a></li>
-    					<li><a href="https://shendengnian.github.io/latex/Individual.pdf" target="_blank">简历</a></li>
-  					</ul>
-			</div>
-            </div>
-            <!--导航下拉菜单结束-->
-            
-            <div class="col-md-6 text-right text-uppercase">
-				<h1 class="title-super text-thin">作品集</h1><br />
-				<h4>Ascend Year</h4>
-            </div>
+        	<!--响应式导航下拉菜单开始-->
+         	<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+            	<span class="sr-only">切换导航</span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+        </button>   
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="http://www.shendengnian.com" target="_blank">博客</a></li>
+            <li><a href="https://github.com/shendengnian" target="_blank">GitHub</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    查看更多 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">暂无作品</a></li>
+                    <li><a href="#">暂无作品</a></li>
+                    <li><a href="#">暂无作品</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+       
+       	<div class="col-md-6 text-right text-uppercase">
+			<h1 class="title-super text-thin">作品集</h1><br />
+			<h4>Ascend Year</h4>
+        </div>
         </div>
         <div class="row">
         	<div class="col-md-12">
@@ -46,9 +59,11 @@
         </div>
         <div class="row">
         	<div class="col-md-12">
-        		<img class="img-responsive" src="http://placekitten.com/1024/768" alt="" />
+        		<img class="img-responsive" src="http://or98sir3g.bkt.clouddn.com/earth-soil-creep-moon-lunar-surface-87009.jpg" alt="" />
         	</div>
         </div>
+        
+        
         <div class="row">
         	<div class="col-md-12">
         		<h2 class="text-muted">Featured ork</h2>
@@ -72,6 +87,7 @@
         	</div>
         </div>
     </div>
+
     
 
  	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
