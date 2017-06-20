@@ -47,7 +47,7 @@ body{
 	font-family: 'Lato', sans-serif;
 	color: #ffffffr;
 	font-weight: 300;
-	background-color:rgb(35,31,32);
+	background-color:#000000;
 	
 }
 .text-muted{
@@ -57,20 +57,20 @@ body{
 	font-weight: 100;
 }
 .title-super{
-	font-size:60px;
+	font-size:3.75em;
 }
 .title-logo{
 	margin-top:20px;
 }
 #example-navbar-collapse{
-	font-size: 18px;
+	font-size: 1.125em;
 }
 #example-navbar-collapse a{
 	color: rgb(38,157,128);
 }
 
 
-/*CSS3图片hover效果*/
+/*博客首页CSS3图片hover效果*/
 .hovereffect {
 	width:100%;
 	height:100%;
@@ -101,21 +101,6 @@ body{
 	transition:all .4s linear;
 }
 
-.hovereffect h2 {
-	text-transform:uppercase;
-	color:#fff;
-	text-align:center;
-	position:relative;
-	font-size:17px;
-	background:rgba(0,0,0,0.6);
-	-webkit-transform:translatey(-100px);
-	-ms-transform:translatey(-100px);
-	transform:translatey(-100px);
-	-webkit-transition:all .2s ease-in-out;
-	transition:all .2s ease-in-out;
-	padding:10px;
-}
-
 .hovereffect a.info {
 	text-decoration:none;
 	display:inline-block;
@@ -133,6 +118,7 @@ body{
 
 .hovereffect a.info:hover {
 	box-shadow:0 0 5px #fff;
+	color:#88ada6;
 }
 
 .hovereffect:hover img {
@@ -158,11 +144,16 @@ body{
 	-webkit-transition-delay:.2s;
 	transition-delay:.2s;
 }
-.paing{
-	padding: 10px auto;
-}
-.head{
+.hovereffect a.head{
 	margin: 50px auto;
 	text-align: center;
-	font-size: 50px;
+	font-size: 3.125em;
+	position:relative;
+	top:50%;
+}
+/*博客首页媒体查询字体大小*/
+@media screen and (max-width: 500px){
+	.hovereffect a.head{
+		font-size: 1.25em;
+	}
 }
