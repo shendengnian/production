@@ -6,6 +6,6 @@
 
 兼容IE浏览器，兼容Chrome和Firefox，其中展示列表2第一张图片滑动到查看更多那块会闪现 <br />
 
-bug，正在尽力想办法完善中。<br />
+bug，正在尽力想办法完善中，演示地址代码存于远程服务器。<br />
 
-[在线演示](https://shendengnian.github.io/production/)
+[在线演示](http://www.shendengnian.com/production/production.html)
