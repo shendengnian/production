@@ -1,232 +1,683 @@
-
 /*= Reset CSS 
 ============= */
-html, body {border: 0; margin: 0; padding: 0;}
-body { font: 14px "Lato", Arial, sans-serif; min-width: 100%; min-height: 100%; color: #666; background-color: #ffffff; }
-.container{margin: 0 auto; max-width: 1060px;}
-h2{color: #fff; float: left; width: 100%; font-size: 24px; font-weight: 400; text-align: center; padding: 50px 0 40px; position: relative; z-index: 50;}
-h2 span{position: relative; padding-bottom: 10px;}
-h2 span:after{content: ""; width: 50%; height: 3px; background-color: #fff; position: absolute; left: 25%; bottom: 0;}
-*{margin: 0; padding: 0; box-sizing: border-box;}
-img{max-width: 100%; vertical-align: middle;}
-.full-length{width: 100%; float: left; padding-bottom: 80px;}
-ul{margin: 0 -1.5%;}
-li{float: left; width: 31.33%; margin: 10px 1%; list-style: none;}
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 
-h3{font-size: 20px; margin: 5px 0 10px;}
-p{font-weight: 300; line-height: 20px; font-size: 14px; margin-bottom: 15px;}
-.btn{display: inline-block; padding: 5px 10px; font-size: 14px; color: #fff; border: 2px solid #4d92d9; background-color: #4d92d9; text-decoration: none; transition: 0.4s;}
-.btn:hover{background-color: transparent; color: #4d92d9; transition: 0.4s;}
-.text-desc{position: absolute; left: 0; top: 0; background-color: #fff; height: 100%; opacity: 0; width: 100%; padding: 20px;}
+body {
+	min-width: 100%;
+	min-height: 100%;
+	background-color: #161823;
+	color: #666;
+	font: 14px "Lato", Arial, sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1060px;
+}
+
+h2 {
+	position: relative;
+	z-index: 50;
+	float: left;
+	padding: 50px 0 40px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+h2 span {
+	position: relative;
+	padding-bottom: 10px;
+}
+
+h2 span:after {
+	position: absolute;
+	bottom: 0;
+	left: 25%;
+	width: 50%;
+	height: 3px;
+	background-color: #fff;
+	content: "";
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.full-length {
+	float: left;
+	padding-bottom: 80px;
+	width: 100%;
+}
+
+ul {
+	margin: 0 -1.5%;
+}
+
+li {
+	float: left;
+	margin: 10px 1%;
+	width: 31.33%;
+	list-style: none;
+}
+
+h3 {
+	margin: 5px 0 10px;
+	font-size: 20px;
+}
+
+p {
+	margin-bottom: 15px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 2px solid #4d92d9;
+	background-color: #4d92d9;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	transition: 0.4s;
+}
+
+.btn:hover {
+	background-color: transparent;
+	color: #4d92d9;
+	transition: 0.4s;
+}
+
+.text-desc {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	opacity: 0;
+}
 /*= Reset CSS End
 ================= */
 
-
-.text-muted{
-	color:#ffffff;
+/*博客首页CSS3效果*/
+.text-muted {
+	color: #ffffff;
 }
-.text-thin{
+
+.text-thin {
 	font-weight: 100;
 }
-.title-super{
-	font-size:3.75em;
+
+.title-super {
+	float: right;
+	color: #ffffff;
+	font-size: 3.75em;
 }
-.title-logo{
-	margin-top:20px;
+
+.title-logo {
+	margin-top: 20px;
 }
-#example-navbar-collapse{
+
+#example-navbar-collapse {
 	font-size: 1.125em;
 }
-#example-navbar-collapse a{
+
+#example-navbar-collapse a {
 	color: rgb(38,157,128);
 }
 
-
-/*博客首页CSS3图片hover效果*/
 .hovereffect {
-	width:100%;
-	height:100%;
-	float:left;
-	overflow:hidden;
-	position:relative;
-	text-align:center;
-	cursor:default;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	cursor: default;
 }
 
 .hovereffect .overlay {
-	width:100%;
-	height:100%;
-	position:absolute;
-	overflow:hidden;
-	top:0;
-	left:0;
-	opacity:0;
-	background-color:rgba(0,0,0,0.5);
-	-webkit-transition:all .4s ease-in-out;
-	transition:all .4s ease-in-out
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
 }
 
 .hovereffect img {
-	display:block;
-	position:relative;
-	-webkit-transition:all .4s linear;
-	transition:all .4s linear;
+	position: relative;
+	display: block;
+	-webkit-transition: all .4s linear;
+	transition: all .4s linear;
 }
 
 .hovereffect a.info {
-	text-decoration:none;
-	display:inline-block;
-	text-transform:uppercase;
-	color:#fff;
-	border:1px solid #fff;
-	background-color:transparent;
-	opacity:0;
-	filter:alpha(opacity=0);
-	webkit-transition:all .2s ease-in-out;
-	transition:all .2s ease-in-out;
-	margin:50px 0 0;
-	padding:7px 14px;
+	display: inline-block;
+	margin: 50px 0 0;
+	padding: 7px 14px;
+	border: 1px solid #fff;
+	background-color: transparent;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	opacity: 0;
+	transition: all .2s ease-in-out;
+	filter: alpha(opacity=0);
+	webkit-transition: all .2s ease-in-out;
 }
 
 .hovereffect a.info:hover {
-	box-shadow:0 0 5px #fff;
-	color:#88ada6;
+	box-shadow: 0 0 5px #fff;
+	color: #88ada6;
 }
 
 .hovereffect:hover img {
-	-ms-transform:scale(1.2);
-	-webkit-transform:scale(1.2);
-	transform:scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-ms-transform: scale(1.2);
 }
 
 .hovereffect:hover .overlay {
-	opacity:1;
-	filter:alpha(opacity=100);
+	opacity: 1;
+	filter: alpha(opacity=100);
 }
 
 .hovereffect:hover h2,.hovereffect:hover a.info {
-	opacity:1;
-	filter:alpha(opacity=100);
-	-ms-transform:translatey(0);
-	-webkit-transform:translatey(0);
-	transform:translatey(0);
+	opacity: 1;
+	-webkit-transform: translatey(0);
+	transform: translatey(0);
+	filter: alpha(opacity=100);
+	-ms-transform: translatey(0);
 }
 
 .hovereffect:hover a.info {
-	-webkit-transition-delay:.2s;
-	transition-delay:.2s;
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
 }
-.hovereffect a.head{
+
+.hovereffect a.head {
+	position: relative;
+	top: 50%;
 	margin: 50px auto;
 	text-align: center;
 	font-size: 3.125em;
-	position:relative;
-	top:50%;
+}
+/*博客CSS3结束*/
+
+
+ /*纯CSS3响应式导航菜单*/
+.nav {
+	position: relative;
+	margin: 20px 0;
 }
 
-/* effect-2 css */
-.port-2{float: left; width: 100%; position: relative; overflow: hidden; text-align: center; border: 4px solid rgba(255, 255, 255, 0.9); perspective: 800px;}
-.port-2 .text-desc{z-index: -1; transition: 0.6s;}
-.port-2 .image-box{transition: 0.4s;}
-.port-2:hover .image-box{transform: rotateX(80deg); transform-origin: center bottom 0; transition: 0.4s;}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
 
-.port-2.effect-1:hover .text-desc{opacity: 1;}
+.nav li {
+	display: inline-block;
+	margin: 0 5px 10px 0;
+	padding: 0;
+	width: 100px;
+	list-style: none;
+}
 
-.port-2.effect-2 .text-desc{opacity: 1; top: -100%;}
-.port-2.effect-2:hover .text-desc{top: 0;}
+.nav a {
+	padding: 3px 12px;
+	color: #999;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 100%;
+}
 
-.port-2.effect-3 .text-desc{opacity: 1; top: auto; bottom: -100%;}
-.port-2.effect-3:hover .text-desc{bottom: 0;}
-/* effect-2 css end */
+.nav a:hover {
+	color: red;
+}
+
+.nav .current a {
+	border-radius: 5px;
+	background: #999;
+	color: #fff;
+}
+/* center nav */
+.nav.center ul {
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.nav {
+		position: relative;
+		margin: 0;
+		min-height: 40px;
+	}
+
+	.nav ul {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 5px 0;
+		width: 120px;
+		border: solid 1px #aaa;
+		border-radius: 5px;
+		background: #fff url(../images/menu.png) no-repeat 10px 11px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+
+	.nav li {
+		display: none;
+ /* hide all <li> items */
+		margin: 0;
+	}
+
+	.nav .current {
+		display: block;
+ /* show only current <li> item */
+	}
+
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+
+	.nav .current a {
+		background: none;
+		color: #666;
+		font-size: 14px;
+	}
+	/* on nav hover */
+	.nav ul:hover {
+		background-image: none;
+	}
+
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+
+	.nav ul:hover .current {
+		background: url(../images/check.png) no-repeat 10px 7px;
+	}
+	/* center nav */
+	.nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+}
+/*纯CSS响应式导航菜单结束*/
 
 
 
+ /*作品展示1*/
+.port-2 {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	border: rgba(255, 255, 255, 0.9);
+	text-align: center;
+	perspective: 800px;
+}
 
+.port-2 .text-desc {
+	z-index: -1;
+	transition: 0.6s;
+}
 
+.port-2 .image-box {
+	transition: 0.4s;
+}
 
-/* effect-6 css */
-.port-6{float: left; width: 100%; position: relative; overflow: hidden; text-align: center; border: 4px solid rgba(255, 255, 255, 0.9); overflow: visible;}
+.port-2:hover .image-box {
+	transition: 0.4s;
+	transform: rotateX(80deg);
+	transform-origin: center bottom 0;
+}
 
-.port-6.effect-1{z-index: 8;}
-.port-6.effect-1 img{transition: 0.5s;}
-.port-6.effect-1:hover img{transform: scale(0.3) translateY(110%); position: relative; z-index: 9;}
-.port-6.effect-1 .text-desc{transform: translateY(-100%); opacity: 0; padding: 10px 20px; transition: 0.5s;}
-.port-6.effect-1:hover .text-desc{transform: translateY(0px); opacity: 1;}
+.port-2.effect-1:hover .text-desc {
+	opacity: 1;
+}
 
-.port-6.effect-2{z-index: 7;}
-.port-6.effect-2 img{transition: 0.6s; z-index: 1;}
-.port-6.effect-2:hover img{transform: scale(0.3) translateX(110%); position: relative; z-index: 9;}
-.port-6.effect-2 .text-desc{transform: translateX(-100%); opacity: 0; padding: 40px 120px 20px 20px; transition: 0.6s;}
-.port-6.effect-2:hover .text-desc{transform: translateX(0px); opacity: 1;}
+.port-2.effect-2 .text-desc {
+	top: -100%;
+	opacity: 1;
+}
 
-.port-6.effect-3 img{transition: 0.5s;}
-.port-6.effect-3:hover img{transform: scale(0.3) translateY(-110%); position: relative; z-index: 9;}
-.port-6.effect-3 .text-desc{transform: translateY(100%); opacity: 0; padding: 85px 20px 10px; transition: 0.5s;}
-.port-6.effect-3:hover .text-desc{transform: translateY(0px); opacity: 1;}
-/* effect-6 css end */
+.port-2.effect-2:hover .text-desc {
+	top: 0;
+}
 
+.port-2.effect-3 .text-desc {
+	top: auto;
+	bottom: -100%;
+	opacity: 1;
+}
 
-/* effect-8 css */
-.port-8{float: left; width: 100%; position: relative; overflow: hidden; text-align: center; border: 4px solid rgba(255, 255, 255, 0.9); overflow: hidden;}
-.port-8 .text-desc{opacity: 0; transition: 0.5s; color: #000; padding: 45px 20px 20px;}
+.port-2.effect-3:hover .text-desc {
+	bottom: 0;
+}
+/* 作品展示1 css end */
 
-.port-8.effect-1 img{transition: 0.5s;}
-.port-8.effect-1:hover img{transform: scale(1.1);}
-.port-8.effect-1 .text-desc{left: 0; position: absolute; top: 0; width: 100%; height: 100%; transform: scale(0);  backface-visibility: hidden;}
-.port-8.effect-1:hover .text-desc{opacity: 1; transform: scale(1); border-radius: 20%;}
+/* 作品展示3 css */
+.port-6 {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	overflow: visible;
+	width: 100%;
+	text-align: center;
+}
 
-.port-8.effect-2 img{transition: 0.5s;}
-.port-8.effect-2:hover img{transform: scale(1.1);}
-.port-8.effect-2 .text-desc{left: 0; position: absolute; top: 0; width: 100%; height: 100%; transform: scale(0);  backface-visibility: hidden;}
-.port-8.effect-2:hover .text-desc{opacity: 1; transform: scale(1); border-radius: 50% 0 50% 0;}
+.port-6.effect-1 {
+	z-index: 8;
+}
 
-.port-8.effect-2 img{transition: 0.5s;}
-.port-8.effect-2:hover img{transform: scale(1.1);}
-.port-8.effect-2 .text-desc{left: 0; position: absolute; top: 0; width: 100%; height: 100%; transform: scale(0);  backface-visibility: hidden;}
-.port-8.effect-2:hover .text-desc{opacity: 1; transform: scale(1); border-radius: 50% 0 50% 0;}
+.port-6.effect-1 img {
+	transition: 0.5s;
+}
 
-.port-8.effect-3 img{transition: 0.5s;}
-.port-8.effect-3:hover img{transform: scale(1.1);}
-.port-8.effect-3 .text-desc{left: 0; position: absolute; top: 0; width: 100%; height: 100%; transform: scale(0);  backface-visibility: hidden; background: none; padding: 40px 70px 20px;}
-.port-8.effect-3 .text-desc:before, .port-8.effect-3 .text-desc:after{background-color: #fff; border-radius: 50% 50% 0 0; content: ""; height: 100%; left: 50%; position: absolute; top: 0; transform: rotate(-50deg); transform-origin: 0 100% 0; width: 50%; z-index: -1;}
-.port-8.effect-3 .text-desc:after {left: 0; transform: rotate(50deg); transform-origin: 100% 100% 0;}
-.port-8.effect-3:hover .text-desc{opacity: 1; transform: scale(1);}
-/* effect-8 css end */
+.port-6.effect-1:hover img {
+	position: relative;
+	z-index: 9;
+	transform: scale(0.3) translateY(110%);
+}
 
+.port-6.effect-1 .text-desc {
+	padding: 10px 20px;
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(-100%);
+}
+
+.port-6.effect-1:hover .text-desc {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.port-6.effect-2 {
+	z-index: 7;
+}
+
+.port-6.effect-2 img {
+	z-index: 1;
+	transition: 0.6s;
+}
+
+.port-6.effect-2:hover img {
+	position: relative;
+	z-index: 9;
+	transform: scale(0.3) translateX(110%);
+}
+
+.port-6.effect-2 .text-desc {
+	padding: 40px 120px 20px 20px;
+	opacity: 0;
+	transition: 0.6s;
+	transform: translateX(-100%);
+}
+
+.port-6.effect-2:hover .text-desc {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.port-6.effect-3 img {
+	transition: 0.5s;
+}
+
+.port-6.effect-3:hover img {
+	position: relative;
+	z-index: 9;
+	transform: scale(0.3) translateY(-110%);
+}
+
+.port-6.effect-3 .text-desc {
+	padding: 85px 20px 10px;
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(100%);
+}
+
+.port-6.effect-3:hover .text-desc {
+	opacity: 1;
+	transform: translateY(0px);
+}
+/* 作品展示3 end */
+
+/* 作品展示2 */
+.port-8 {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+}
+
+.port-8 .text-desc {
+	padding: 45px 20px 20px;
+	color: #000;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.port-8.effect-1 img {
+	transition: 0.5s;
+}
+
+.port-8.effect-1:hover img {
+	transform: scale(1.1);
+}
+
+.port-8.effect-1 .text-desc {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	backface-visibility: hidden;
+}
+
+.port-8.effect-1:hover .text-desc {
+	border-radius: 20%;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.port-8.effect-2 img {
+	transition: 0.5s;
+}
+
+.port-8.effect-2:hover img {
+	transform: scale(1.1);
+}
+
+.port-8.effect-2 .text-desc {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	backface-visibility: hidden;
+}
+
+.port-8.effect-2:hover .text-desc {
+	border-radius: 50% 0 50% 0;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.port-8.effect-2 img {
+	transition: 0.5s;
+}
+
+.port-8.effect-2:hover img {
+	transform: scale(1.1);
+}
+
+.port-8.effect-2 .text-desc {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	backface-visibility: hidden;
+}
+
+.port-8.effect-2:hover .text-desc {
+	border-radius: 50% 0 50% 0;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.port-8.effect-3 img {
+	transition: 0.5s;
+}
+
+.port-8.effect-3:hover img {
+	transform: scale(1.1);
+}
+
+.port-8.effect-3 .text-desc {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 40px 70px 20px;
+	width: 100%;
+	height: 100%;
+	background: none;
+	transform: scale(0);
+	backface-visibility: hidden;
+}
+
+.port-8.effect-3 .text-desc:before, .port-8.effect-3 .text-desc:after {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: -1;
+	width: 50%;
+	height: 100%;
+	border-radius: 50% 50% 0 0;
+	background-color: #fff;
+	content: "";
+	transform: rotate(-50deg);
+	transform-origin: 0 100% 0;
+}
+
+.port-8.effect-3 .text-desc:after {
+	left: 0;
+	transform: rotate(50deg);
+	transform-origin: 100% 100% 0;
+}
+
+.port-8.effect-3:hover .text-desc {
+	opacity: 1;
+	transform: scale(1);
+}
+/* 作品展示2 end */
 
 /*= Media Screen CSS
 ==================== */
-@media only screen and (max-width: 1090px){
-	ul{width: 340px; margin: 0 auto;}
-	li{width: 100%; margin: 20px 0;}
-	.port-5.effect-1 {z-index: 19;}
+@media only screen and (max-width: 1090px) {
+	ul {
+		margin: 0 auto;
+		width: 340px;
+	}
+
+	li {
+		margin: 20px 0;
+		width: 100%;
+	}
+
+	.port-5.effect-1 {
+		z-index: 19;
+	}
 }
 
-@media only screen and (max-width: 360px){
-	ul{width: 300px;}
+@media only screen and (max-width: 360px) {
+	ul {
+		width: 300px;
+	}
+
 	.port-1 .text-desc, 
 	.port-1.effect-3:hover .text-desc, 
 	.port-3.effect-1 .text-desc, 
 	.port-3.effect-3 .text-desc,
 	.port-4.effect-1 .text-desc,
 	.port-4.effect-2 .text-desc,
-	.port-4.effect-3 .text-desc, .port-8 .text-desc{padding: 20px;}
-	.text-desc{padding: 7px;}
-	.port-5.effect-1 .text-desc{padding: 13px 20px 20px 90px;}
-	.port-5.effect-2 .text-desc{padding: 10px;}
-	.port-5.effect-3 .text-desc{padding: 16px 90px 20px 20px;}
+	.port-4.effect-3 .text-desc, .port-8 .text-desc {
+		padding: 20px;
+	}
+
+	.text-desc {
+		padding: 7px;
+	}
+
+	.port-5.effect-1 .text-desc {
+		padding: 13px 20px 20px 90px;
+	}
+
+	.port-5.effect-2 .text-desc {
+		padding: 10px;
+	}
+
+	.port-5.effect-3 .text-desc {
+		padding: 16px 90px 20px 20px;
+	}
+
 	.port-6.effect-1 .text-desc .btn, 
 	.port-6.effect-2 .text-desc .btn,
 	.port-6.effect-3 .text-desc .btn,
 	.port-7.effect-1 .text-desc .btn,
 	.port-7.effect-2 .text-desc .btn,
 	.port-7.effect-3 .text-desc .btn,
-	.port-8.effect-3 .text-desc .btn{display: none;}
-	.port-6.effect-2 .text-desc{padding: 20px 120px 20px 20px;}
-	.port-6.effect-3 .text-desc{padding: 75px 20px 10px;}
-	.port-7.effect-1 .text-desc{padding: 12px 10px;}
-	.port-8.effect-3 .text-desc{padding: 28px 70px 20px;}
-	.hovereffect a.head{
+	.port-8.effect-3 .text-desc .btn {
+		display: none;
+	}
+
+	.port-6.effect-2 .text-desc {
+		padding: 20px 120px 20px 20px;
+	}
+
+	.port-6.effect-3 .text-desc {
+		padding: 75px 20px 10px;
+	}
+
+	.port-7.effect-1 .text-desc {
+		padding: 12px 10px;
+	}
+
+	.port-8.effect-3 .text-desc {
+		padding: 28px 70px 20px;
+	}
+
+	.hovereffect a.head {
 		font-size: 1.25em;
 	}
 }
@@ -234,14 +685,23 @@ p{font-weight: 300; line-height: 20px; font-size: 14px; margin-bottom: 15px;}
 ======================== */
 
 
+.copyright {
+	position: relative;
+	right: 50%;
+	float: right;
+	color: #ffffff;
+	text-align: center;
+}
 
+.copyright ul {
+	position: relative;
+	right: -50%;
+}
 
-
-
-
-
-
-
+.copyright ul li {
+	position: relative;
+	float: left;
+}
 
 
 
